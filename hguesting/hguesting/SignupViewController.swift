@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SignupViewController: UIViewController {
 
@@ -29,13 +30,13 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var signupbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        passwordTextField.isSecureTextEntry = true
        
-        
+        passwordcheckTextfield.isSecureTextEntry = true
     }
     
    
-    
+   
  
    
     @IBAction func singupbtn(_ sender: Any) {

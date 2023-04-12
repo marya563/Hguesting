@@ -4,7 +4,6 @@
 //
 //  Created by Mac Mini 9 on 22/3/2023.
 //
-
 import UIKit
 import SwiftUI
 
@@ -21,7 +20,7 @@ class SinginViewController: UIViewController {
   
     var userData: [String: Any]?
     var id: String?
-
+    var cc: String?
     
     
    
@@ -61,7 +60,7 @@ class SinginViewController: UIViewController {
         request.httpMethod = "POST"
 
         // Set the request body
-        let params = ["email": email, "password": password]
+        let params = ["email": email, "password": password ]
         print(params)
 
         request.httpBody = try? JSONSerialization.data(withJSONObject: params)
@@ -87,19 +86,21 @@ class SinginViewController: UIViewController {
 
             do {
                 if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any], let email = json["email"] as? String, let id = json["id"] as? String {
-
                     print(json)
                     let defaults = UserDefaults.standard
-                    
+
                     // Save the user ID to UserDefaults
                     defaults.set(id, forKey: "id")
-                    
+
                     // Save the email to UserDefaults
                     defaults.set(email, forKey: "rememberMe")
 
+                    defaults.synchronize()
                     // Retrieve the value from UserDefaults
                     let savedEmail = defaults.string(forKey: "rememberMe")
                     print("Saved email: \(savedEmail ?? "N/A")")
+                    let savedid = defaults.string(forKey: "id")
+                    print("Saved id: \(savedid ?? "N/A")")
 
                     // Check if the switch is on
                     DispatchQueue.main.async {
@@ -107,20 +108,19 @@ class SinginViewController: UIViewController {
 
                         // If the switch is on, save the email and password to UserDefaults
                         if isOn {
-                                defaults.set(email, forKey: "userEmail")
-                                defaults.set(password, forKey: "userPassword")
-                            }
+                            defaults.set(email, forKey: "userEmail")
+                            defaults.set(password, forKey: "userPassword")
+                        }
                     }
 
-                
                     DispatchQueue.main.async {
                         if let idStr = id as? String {
+                            print(idStr)
                             self.showAlertNavigate(title: "Success", message: "Welcome \(email)", id: idStr)
                         } else {
                             self.showAlert(title: "Error", message: "Invalid ID format")
                         }
                     }
-
                 }
             } catch {
                 print("Error parsing JSON: \(error.localizedDescription)")
