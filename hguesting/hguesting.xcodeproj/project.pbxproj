@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A06D11C29E9F61A006A4F9E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A06D11B29E9F61A006A4F9E /* CollectionViewController.swift */; };
+		6A06D11E29E9F9C8006A4F9E /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A06D11D29E9F9C8006A4F9E /* HomeCollectionViewCell.swift */; };
+		6A06D12029EA09AF006A4F9E /* car.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6A06D11F29EA09AF006A4F9E /* car.jpeg */; };
+		6A06D12229EA09E3006A4F9E /* hotel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6A06D12129EA09E3006A4F9E /* hotel.jpeg */; };
+		6A06D12429EA09EE006A4F9E /* events.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6A06D12329EA09EE006A4F9E /* events.jpeg */; };
+		6A06D12629EA09FD006A4F9E /* roomservice.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6A06D12529EA09FD006A4F9E /* roomservice.jpeg */; };
+		6A06D12829EA0A04006A4F9E /* Tour.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6A06D12729EA0A04006A4F9E /* Tour.jpeg */; };
+		6A0A6AD129E99DA70030142D /* Line 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0A6AD029E99DA70030142D /* Line 3.png */; };
+		6A0A6AD529E99E650030142D /* 79 Place de la Madeleine , Paris , 78754 , France.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0A6AD429E99E650030142D /* 79 Place de la Madeleine , Paris , 78754 , France.png */; };
+		6A0A6AD729E99EAA0030142D /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0A6AD629E99EAA0030142D /* location.png */; };
+		6A0A6ADB29E9A4110030142D /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A6ADA29E9A4110030142D /* MyCollectionViewCell.swift */; };
+		6A46A1A129EAE58600B6ACF4 /* ServiceRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46A1A029EAE58600B6ACF4 /* ServiceRoom.swift */; };
+		6A46A1A329EAEC0700B6ACF4 /* ServiceRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46A1A229EAEC0700B6ACF4 /* ServiceRoomViewController.swift */; };
+		6A46A1A529EAED3600B6ACF4 /* ServiceRoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46A1A429EAED3600B6ACF4 /* ServiceRoomCollectionViewCell.swift */; };
+		6A47E4F229CB54D700543A9D /* 🦆 icon _facebook round_.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A47E4EF29CB54D700543A9D /* 🦆 icon _facebook round_.png */; };
+		6A47E4F329CB54D700543A9D /* 🦆 icon _google plus round_.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A47E4F029CB54D700543A9D /* 🦆 icon _google plus round_.png */; };
+		6A47E4F429CB54D700543A9D /* 🦆 icon _twitter round_.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A47E4F129CB54D700543A9D /* 🦆 icon _twitter round_.png */; };
+		6A47E4F629CB552900543A9D /* Frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A47E4F529CB552900543A9D /* Frame.png */; };
+		6A47E4F829CB583900543A9D /* SinginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A47E4F729CB583900543A9D /* SinginViewController.swift */; };
+		6A490AAC29C8B09300B7F617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A490AAB29C8B09300B7F617 /* AppDelegate.swift */; };
+		6A490AAE29C8B09300B7F617 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A490AAD29C8B09300B7F617 /* SceneDelegate.swift */; };
+		6A490AB029C8B09300B7F617 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A490AAF29C8B09300B7F617 /* ViewController.swift */; };
+		6A490AB329C8B09300B7F617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A490AB129C8B09300B7F617 /* Main.storyboard */; };
+		6A490AB629C8B09300B7F617 /* hguesting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A490AB429C8B09300B7F617 /* hguesting.xcdatamodeld */; };
+		6A490AB829C8B09300B7F617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A490AB729C8B09300B7F617 /* Assets.xcassets */; };
+		6A490ABB29C8B09300B7F617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A490AB929C8B09300B7F617 /* LaunchScreen.storyboard */; };
+		6A490AC329C8B62E00B7F617 /* Black & Beige Luxury Aesthetic Minimal Font Logo 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A490AC229C8B62E00B7F617 /* Black & Beige Luxury Aesthetic Minimal Font Logo 1.png */; };
+		6A490AC529C8BE9A00B7F617 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A490AC429C8BE9A00B7F617 /* Image.png */; };
+		6A490AC729C8BEF500B7F617 /* Mask Group.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A490AC629C8BEF500B7F617 /* Mask Group.png */; };
+		6A490AC929C8C52B00B7F617 /* Urbanist in Resources */ = {isa = PBXBuildFile; fileRef = 6A490AC829C8C52B00B7F617 /* Urbanist */; };
+		6A546E5429E44CF300FE6C4B /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A546E5329E44CF300FE6C4B /* Hotel.swift */; };
+		6A546E5629E453F300FE6C4B /* HotelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A546E5529E453F300FE6C4B /* HotelCollectionViewCell.swift */; };
+		6A546E5929E4555B00FE6C4B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6A546E5829E4555B00FE6C4B /* Kingfisher */; };
+		6A6BC71229D384FB00433E7E /* arrow-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6BC71129D384FB00433E7E /* arrow-right.png */; };
+		6A6E39F129E710F6007C57E1 /* profilpic.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6E39F029E710F6007C57E1 /* profilpic.png */; };
+		6A6E39F329E71310007C57E1 /* UpdateprofilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6E39F229E71310007C57E1 /* UpdateprofilViewController.swift */; };
+		6A7BA62C29D2465700734C39 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BA62B29D2465700734C39 /* ProfilViewController.swift */; };
+		6A7BA62E29D24ADA00734C39 /* HotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7BA62D29D24ADA00734C39 /* HotelViewController.swift */; };
+		6A7BA64129D24B2500734C39 /* minilogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A7BA63629D24B2500734C39 /* minilogo.png */; };
+		6A7BA64629D24C8F00734C39 /* Rectangle 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A7BA64529D24C8F00734C39 /* Rectangle 6.png */; };
+		6A7BA64829D24CED00734C39 /* Rectangle 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A7BA64729D24CED00734C39 /* Rectangle 7.png */; };
+		6A8D475729D88F2E00A55CB8 /* Rectangle 322.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8D475629D88F2E00A55CB8 /* Rectangle 322.png */; };
+		6A8D475929D8903300A55CB8 /* Vector-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8D475829D8903300A55CB8 /* Vector-2.png */; };
+		6A8D475D29D890DD00A55CB8 /* Rectangle 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8D475A29D890DD00A55CB8 /* Rectangle 5.png */; };
+		6A8D475E29D890DD00A55CB8 /* Ellipse 31.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8D475B29D890DD00A55CB8 /* Ellipse 31.png */; };
+		6AB1891529DE1D8E000567E3 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB1891429DE1D8E000567E3 /* testViewController.swift */; };
+		6AB1891729DE3E0E000567E3 /* carViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB1891629DE3E0E000567E3 /* carViewController.swift */; };
+		6AB9976929EB524700B1459C /* TourCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9976829EB524700B1459C /* TourCollectionViewController.swift */; };
+		6AB9976B29EB52DE00B1459C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9976A29EB52DE00B1459C /* EventsViewController.swift */; };
+		6AB9976D29EB52EE00B1459C /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9976C29EB52EE00B1459C /* TourViewController.swift */; };
+		6ACB4D0629CA076700243A8F /* AssetsCheckmark in Resources */ = {isa = PBXBuildFile; fileRef = 6ACB4D0529CA076700243A8F /* AssetsCheckmark */; };
+		6ACB4D0829CA0A2200243A8F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB4D0729CA0A2200243A8F /* SignupViewController.swift */; };
+		6ACCC2B429E6021000CD624A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACCC2B329E6021000CD624A /* HomeViewController.swift */; };
+		6AF8DB0129E76184001F6378 /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8DB0029E76184001F6378 /* CarsViewController.swift */; };
+		6AF8DB0529E76E37001F6378 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8DB0429E76E37001F6378 /* Car.swift */; };
+		6AF8DB0729E77A4C001F6378 /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8DB0629E77A4C001F6378 /* CarCollectionViewCell.swift */; };
+		D3392CEB36841936BF4C039C /* Pods_hguesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427FA039FBB62BFF4E4D0D54 /* Pods_hguesting.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3666A60B2A88DD4DA3BE9068 /* Pods-hguesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hguesting.debug.xcconfig"; path = "Target Support Files/Pods-hguesting/Pods-hguesting.debug.xcconfig"; sourceTree = "<group>"; };
+		427FA039FBB62BFF4E4D0D54 /* Pods_hguesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hguesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A06D11B29E9F61A006A4F9E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		6A06D11D29E9F9C8006A4F9E /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		6A06D11F29EA09AF006A4F9E /* car.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpeg; sourceTree = "<group>"; };
+		6A06D12129EA09E3006A4F9E /* hotel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hotel.jpeg; path = ../../../../Downloads/hotel.jpeg; sourceTree = "<group>"; };
+		6A06D12329EA09EE006A4F9E /* events.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = events.jpeg; sourceTree = "<group>"; };
+		6A06D12529EA09FD006A4F9E /* roomservice.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roomservice.jpeg; sourceTree = "<group>"; };
+		6A06D12729EA0A04006A4F9E /* Tour.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tour.jpeg; sourceTree = "<group>"; };
+		6A0A6AD029E99DA70030142D /* Line 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Line 3.png"; sourceTree = "<group>"; };
+		6A0A6AD429E99E650030142D /* 79 Place de la Madeleine , Paris , 78754 , France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "79 Place de la Madeleine , Paris , 78754 , France.png"; sourceTree = "<group>"; };
+		6A0A6AD629E99EAA0030142D /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		6A0A6ADA29E9A4110030142D /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		6A46A1A029EAE58600B6ACF4 /* ServiceRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRoom.swift; sourceTree = "<group>"; };
+		6A46A1A229EAEC0700B6ACF4 /* ServiceRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRoomViewController.swift; sourceTree = "<group>"; };
+		6A46A1A429EAED3600B6ACF4 /* ServiceRoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRoomCollectionViewCell.swift; sourceTree = "<group>"; };
+		6A47E4EF29CB54D700543A9D /* 🦆 icon _facebook round_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "🦆 icon _facebook round_.png"; path = "../../../../Downloads/🦆 icon _facebook round_.png"; sourceTree = "<group>"; };
+		6A47E4F029CB54D700543A9D /* 🦆 icon _google plus round_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "🦆 icon _google plus round_.png"; path = "../../../../Downloads/🦆 icon _google plus round_.png"; sourceTree = "<group>"; };
+		6A47E4F129CB54D700543A9D /* 🦆 icon _twitter round_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "🦆 icon _twitter round_.png"; path = "../../../../Downloads/🦆 icon _twitter round_.png"; sourceTree = "<group>"; };
+		6A47E4F529CB552900543A9D /* Frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Frame.png; path = ../../../../Downloads/Frame.png; sourceTree = "<group>"; };
+		6A47E4F729CB583900543A9D /* SinginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinginViewController.swift; sourceTree = "<group>"; };
+		6A490AA829C8B09300B7F617 /* hguesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hguesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A490AAB29C8B09300B7F617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A490AAD29C8B09300B7F617 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6A490AAF29C8B09300B7F617 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6A490AB229C8B09300B7F617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A490AB529C8B09300B7F617 /* hguesting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hguesting.xcdatamodel; sourceTree = "<group>"; };
+		6A490AB729C8B09300B7F617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A490ABA29C8B09300B7F617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A490ABC29C8B09300B7F617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A490AC229C8B62E00B7F617 /* Black & Beige Luxury Aesthetic Minimal Font Logo 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Black & Beige Luxury Aesthetic Minimal Font Logo 1.png"; path = "../../../../Downloads/Black & Beige Luxury Aesthetic Minimal Font Logo 1.png"; sourceTree = "<group>"; };
+		6A490AC429C8BE9A00B7F617 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Image.png; path = ../../../../Downloads/Image.png; sourceTree = "<group>"; };
+		6A490AC629C8BEF500B7F617 /* Mask Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mask Group.png"; path = "../../../../Downloads/Mask Group.png"; sourceTree = "<group>"; };
+		6A490AC829C8C52B00B7F617 /* Urbanist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Urbanist; path = ../../../../Downloads/Urbanist; sourceTree = "<group>"; };
+		6A546E5329E44CF300FE6C4B /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		6A546E5529E453F300FE6C4B /* HotelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCollectionViewCell.swift; sourceTree = "<group>"; };
+		6A6BC71129D384FB00433E7E /* arrow-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow-right.png"; path = "../../../../Downloads/arrow-right.png"; sourceTree = "<group>"; };
+		6A6E39F029E710F6007C57E1 /* profilpic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profilpic.png; sourceTree = "<group>"; };
+		6A6E39F229E71310007C57E1 /* UpdateprofilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateprofilViewController.swift; sourceTree = "<group>"; };
+		6A7BA62B29D2465700734C39 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
+		6A7BA62D29D24ADA00734C39 /* HotelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewController.swift; sourceTree = "<group>"; };
+		6A7BA63629D24B2500734C39 /* minilogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = minilogo.png; path = ../../../../Downloads/minilogo.png; sourceTree = "<group>"; };
+		6A7BA64529D24C8F00734C39 /* Rectangle 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 6.png"; path = "../../../../Downloads/Rectangle 6.png"; sourceTree = "<group>"; };
+		6A7BA64729D24CED00734C39 /* Rectangle 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 7.png"; path = "../../../../Downloads/Rectangle 7.png"; sourceTree = "<group>"; };
+		6A8D475629D88F2E00A55CB8 /* Rectangle 322.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 322.png"; sourceTree = "<group>"; };
+		6A8D475829D8903300A55CB8 /* Vector-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vector-2.png"; sourceTree = "<group>"; };
+		6A8D475A29D890DD00A55CB8 /* Rectangle 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 5.png"; sourceTree = "<group>"; };
+		6A8D475B29D890DD00A55CB8 /* Ellipse 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ellipse 31.png"; sourceTree = "<group>"; };
+		6AB1891429DE1D8E000567E3 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		6AB1891629DE3E0E000567E3 /* carViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carViewController.swift; sourceTree = "<group>"; };
+		6AB9976829EB524700B1459C /* TourCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourCollectionViewController.swift; sourceTree = "<group>"; };
+		6AB9976A29EB52DE00B1459C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		6AB9976C29EB52EE00B1459C /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
+		6ACB4D0529CA076700243A8F /* AssetsCheckmark */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AssetsCheckmark; path = ../../../../Downloads/AssetsCheckmark; sourceTree = "<group>"; };
+		6ACB4D0729CA0A2200243A8F /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		6ACCC2B329E6021000CD624A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6AF8DB0029E76184001F6378 /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
+		6AF8DB0429E76E37001F6378 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		6AF8DB0629E77A4C001F6378 /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
+		A9F3C184E8246F72ACB8134E /* Pods-hguesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hguesting.release.xcconfig"; path = "Target Support Files/Pods-hguesting/Pods-hguesting.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A490AA529C8B09300B7F617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A546E5929E4555B00FE6C4B /* Kingfisher in Frameworks */,
+				D3392CEB36841936BF4C039C /* Pods_hguesting.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EF3F70ECDBC2DFA16A1BA65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				427FA039FBB62BFF4E4D0D54 /* Pods_hguesting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A490A9F29C8B09300B7F617 = {
+			isa = PBXGroup;
+			children = (
+				6AF8DB0029E76184001F6378 /* CarsViewController.swift */,
+				6ACCC2B329E6021000CD624A /* HomeViewController.swift */,
+				6A490AAA29C8B09300B7F617 /* hguesting */,
+				6A490AA929C8B09300B7F617 /* Products */,
+				E14218902A1468B475FFCE53 /* Pods */,
+				4EF3F70ECDBC2DFA16A1BA65 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6A490AA929C8B09300B7F617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A490AA829C8B09300B7F617 /* hguesting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A490AAA29C8B09300B7F617 /* hguesting */ = {
+			isa = PBXGroup;
+			children = (
+				6A546E5229E44CE400FE6C4B /* models */,
+				6AB1891629DE3E0E000567E3 /* carViewController.swift */,
+				6A46A1A229EAEC0700B6ACF4 /* ServiceRoomViewController.swift */,
+				6A7BA62D29D24ADA00734C39 /* HotelViewController.swift */,
+				6A6E39F229E71310007C57E1 /* UpdateprofilViewController.swift */,
+				6A490AAB29C8B09300B7F617 /* AppDelegate.swift */,
+				6A490AAD29C8B09300B7F617 /* SceneDelegate.swift */,
+				6A490AAF29C8B09300B7F617 /* ViewController.swift */,
+				6A490AB129C8B09300B7F617 /* Main.storyboard */,
+				6AB9976C29EB52EE00B1459C /* TourViewController.swift */,
+				6AB9976A29EB52DE00B1459C /* EventsViewController.swift */,
+				6AB9976829EB524700B1459C /* TourCollectionViewController.swift */,
+				6A06D11B29E9F61A006A4F9E /* CollectionViewController.swift */,
+				6A0A6ADA29E9A4110030142D /* MyCollectionViewCell.swift */,
+				6AB1891429DE1D8E000567E3 /* testViewController.swift */,
+				6A7BA62B29D2465700734C39 /* ProfilViewController.swift */,
+				6A47E4F729CB583900543A9D /* SinginViewController.swift */,
+				6ACB4D0729CA0A2200243A8F /* SignupViewController.swift */,
+				6A06D12529EA09FD006A4F9E /* roomservice.jpeg */,
+				6A06D12729EA0A04006A4F9E /* Tour.jpeg */,
+				6A490AB729C8B09300B7F617 /* Assets.xcassets */,
+				6A06D12329EA09EE006A4F9E /* events.jpeg */,
+				6A06D12129EA09E3006A4F9E /* hotel.jpeg */,
+				6A06D11F29EA09AF006A4F9E /* car.jpeg */,
+				6A0A6AD629E99EAA0030142D /* location.png */,
+				6A0A6AD429E99E650030142D /* 79 Place de la Madeleine , Paris , 78754 , France.png */,
+				6A0A6AD029E99DA70030142D /* Line 3.png */,
+				6A6E39F029E710F6007C57E1 /* profilpic.png */,
+				6A8D475829D8903300A55CB8 /* Vector-2.png */,
+				6A8D475B29D890DD00A55CB8 /* Ellipse 31.png */,
+				6A8D475A29D890DD00A55CB8 /* Rectangle 5.png */,
+				6A8D475629D88F2E00A55CB8 /* Rectangle 322.png */,
+				6A6BC71129D384FB00433E7E /* arrow-right.png */,
+				6A7BA64729D24CED00734C39 /* Rectangle 7.png */,
+				6A7BA64529D24C8F00734C39 /* Rectangle 6.png */,
+				6A7BA63629D24B2500734C39 /* minilogo.png */,
+				6A47E4F529CB552900543A9D /* Frame.png */,
+				6A47E4EF29CB54D700543A9D /* 🦆 icon _facebook round_.png */,
+				6A47E4F029CB54D700543A9D /* 🦆 icon _google plus round_.png */,
+				6A47E4F129CB54D700543A9D /* 🦆 icon _twitter round_.png */,
+				6ACB4D0529CA076700243A8F /* AssetsCheckmark */,
+				6A490AC629C8BEF500B7F617 /* Mask Group.png */,
+				6A490AC429C8BE9A00B7F617 /* Image.png */,
+				6A490AB929C8B09300B7F617 /* LaunchScreen.storyboard */,
+				6A490AC829C8C52B00B7F617 /* Urbanist */,
+				6A490AC229C8B62E00B7F617 /* Black & Beige Luxury Aesthetic Minimal Font Logo 1.png */,
+				6A490ABC29C8B09300B7F617 /* Info.plist */,
+				6A490AB429C8B09300B7F617 /* hguesting.xcdatamodeld */,
+				6A546E5529E453F300FE6C4B /* HotelCollectionViewCell.swift */,
+				6AF8DB0629E77A4C001F6378 /* CarCollectionViewCell.swift */,
+				6A06D11D29E9F9C8006A4F9E /* HomeCollectionViewCell.swift */,
+				6A46A1A429EAED3600B6ACF4 /* ServiceRoomCollectionViewCell.swift */,
+			);
+			path = hguesting;
+			sourceTree = "<group>";
+		};
+		6A546E5229E44CE400FE6C4B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6A546E5329E44CF300FE6C4B /* Hotel.swift */,
+				6AF8DB0429E76E37001F6378 /* Car.swift */,
+				6A46A1A029EAE58600B6ACF4 /* ServiceRoom.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E14218902A1468B475FFCE53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3666A60B2A88DD4DA3BE9068 /* Pods-hguesting.debug.xcconfig */,
+				A9F3C184E8246F72ACB8134E /* Pods-hguesting.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A490AA729C8B09300B7F617 /* hguesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A490ABF29C8B09300B7F617 /* Build configuration list for PBXNativeTarget "hguesting" */;
+			buildPhases = (
+				93A0E0BF3B2EF631CBF5E9B4 /* [CP] Check Pods Manifest.lock */,
+				6A490AA429C8B09300B7F617 /* Sources */,
+				6A490AA529C8B09300B7F617 /* Frameworks */,
+				6A490AA629C8B09300B7F617 /* Resources */,
+				8E488D845124826BB245A6E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hguesting;
+			packageProductDependencies = (
+				6A546E5829E4555B00FE6C4B /* Kingfisher */,
+			);
+			productName = hguesting;
+			productReference = 6A490AA829C8B09300B7F617 /* hguesting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A490AA029C8B09300B7F617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					6A490AA729C8B09300B7F617 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 6A490AA329C8B09300B7F617 /* Build configuration list for PBXProject "hguesting" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A490A9F29C8B09300B7F617;
+			packageReferences = (
+				6A546E5729E4555B00FE6C4B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 6A490AA929C8B09300B7F617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A490AA729C8B09300B7F617 /* hguesting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A490AA629C8B09300B7F617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7BA64129D24B2500734C39 /* minilogo.png in Resources */,
+				6A47E4F329CB54D700543A9D /* 🦆 icon _google plus round_.png in Resources */,
+				6A490AC929C8C52B00B7F617 /* Urbanist in Resources */,
+				6A47E4F229CB54D700543A9D /* 🦆 icon _facebook round_.png in Resources */,
+				6A06D12629EA09FD006A4F9E /* roomservice.jpeg in Resources */,
+				6A6E39F129E710F6007C57E1 /* profilpic.png in Resources */,
+				6A8D475729D88F2E00A55CB8 /* Rectangle 322.png in Resources */,
+				6A47E4F629CB552900543A9D /* Frame.png in Resources */,
+				6A490ABB29C8B09300B7F617 /* LaunchScreen.storyboard in Resources */,
+				6A490AC529C8BE9A00B7F617 /* Image.png in Resources */,
+				6ACB4D0629CA076700243A8F /* AssetsCheckmark in Resources */,
+				6A0A6AD729E99EAA0030142D /* location.png in Resources */,
+				6A0A6AD529E99E650030142D /* 79 Place de la Madeleine , Paris , 78754 , France.png in Resources */,
+				6A06D12829EA0A04006A4F9E /* Tour.jpeg in Resources */,
+				6A0A6AD129E99DA70030142D /* Line 3.png in Resources */,
+				6A490AC729C8BEF500B7F617 /* Mask Group.png in Resources */,
+				6A8D475D29D890DD00A55CB8 /* Rectangle 5.png in Resources */,
+				6A06D12029EA09AF006A4F9E /* car.jpeg in Resources */,
+				6A6BC71229D384FB00433E7E /* arrow-right.png in Resources */,
+				6A06D12429EA09EE006A4F9E /* events.jpeg in Resources */,
+				6A490AB829C8B09300B7F617 /* Assets.xcassets in Resources */,
+				6A06D12229EA09E3006A4F9E /* hotel.jpeg in Resources */,
+				6A7BA64629D24C8F00734C39 /* Rectangle 6.png in Resources */,
+				6A7BA64829D24CED00734C39 /* Rectangle 7.png in Resources */,
+				6A47E4F429CB54D700543A9D /* 🦆 icon _twitter round_.png in Resources */,
+				6A490AB329C8B09300B7F617 /* Main.storyboard in Resources */,
+				6A8D475929D8903300A55CB8 /* Vector-2.png in Resources */,
+				6A490AC329C8B62E00B7F617 /* Black & Beige Luxury Aesthetic Minimal Font Logo 1.png in Resources */,
+				6A8D475E29D890DD00A55CB8 /* Ellipse 31.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E488D845124826BB245A6E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hguesting/Pods-hguesting-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hguesting/Pods-hguesting-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hguesting/Pods-hguesting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A0E0BF3B2EF631CBF5E9B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hguesting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A490AA429C8B09300B7F617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF8DB0729E77A4C001F6378 /* CarCollectionViewCell.swift in Sources */,
+				6A46A1A129EAE58600B6ACF4 /* ServiceRoom.swift in Sources */,
+				6A47E4F829CB583900543A9D /* SinginViewController.swift in Sources */,
+				6A46A1A529EAED3600B6ACF4 /* ServiceRoomCollectionViewCell.swift in Sources */,
+				6A46A1A329EAEC0700B6ACF4 /* ServiceRoomViewController.swift in Sources */,
+				6A0A6ADB29E9A4110030142D /* MyCollectionViewCell.swift in Sources */,
+				6A490AB629C8B09300B7F617 /* hguesting.xcdatamodeld in Sources */,
+				6AF8DB0129E76184001F6378 /* CarsViewController.swift in Sources */,
+				6A7BA62C29D2465700734C39 /* ProfilViewController.swift in Sources */,
+				6AB9976B29EB52DE00B1459C /* EventsViewController.swift in Sources */,
+				6AB1891529DE1D8E000567E3 /* testViewController.swift in Sources */,
+				6AB9976929EB524700B1459C /* TourCollectionViewController.swift in Sources */,
+				6A7BA62E29D24ADA00734C39 /* HotelViewController.swift in Sources */,
+				6A490AB029C8B09300B7F617 /* ViewController.swift in Sources */,
+				6ACB4D0829CA0A2200243A8F /* SignupViewController.swift in Sources */,
+				6AB1891729DE3E0E000567E3 /* carViewController.swift in Sources */,
+				6A6E39F329E71310007C57E1 /* UpdateprofilViewController.swift in Sources */,
+				6A06D11C29E9F61A006A4F9E /* CollectionViewController.swift in Sources */,
+				6AF8DB0529E76E37001F6378 /* Car.swift in Sources */,
+				6A490AAC29C8B09300B7F617 /* AppDelegate.swift in Sources */,
+				6A06D11E29E9F9C8006A4F9E /* HomeCollectionViewCell.swift in Sources */,
+				6A490AAE29C8B09300B7F617 /* SceneDelegate.swift in Sources */,
+				6A546E5429E44CF300FE6C4B /* Hotel.swift in Sources */,
+				6ACCC2B429E6021000CD624A /* HomeViewController.swift in Sources */,
+				6AB9976D29EB52EE00B1459C /* TourViewController.swift in Sources */,
+				6A546E5629E453F300FE6C4B /* HotelCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6A490AB129C8B09300B7F617 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A490AB229C8B09300B7F617 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A490AB929C8B09300B7F617 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A490ABA29C8B09300B7F617 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A490ABD29C8B09300B7F617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A490ABE29C8B09300B7F617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A490AC029C8B09300B7F617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3666A60B2A88DD4DA3BE9068 /* Pods-hguesting.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hguesting/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = esprit.tn.hguesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A490AC129C8B09300B7F617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F3C184E8246F72ACB8134E /* Pods-hguesting.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hguesting/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = esprit.tn.hguesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A490AA329C8B09300B7F617 /* Build configuration list for PBXProject "hguesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A490ABD29C8B09300B7F617 /* Debug */,
+				6A490ABE29C8B09300B7F617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A490ABF29C8B09300B7F617 /* Build configuration list for PBXNativeTarget "hguesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A490AC029C8B09300B7F617 /* Debug */,
+				6A490AC129C8B09300B7F617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A546E5729E4555B00FE6C4B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A546E5829E4555B00FE6C4B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A546E5729E4555B00FE6C4B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		6A490AB429C8B09300B7F617 /* hguesting.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A490AB529C8B09300B7F617 /* hguesting.xcdatamodel */,
+			);
+			currentVersion = 6A490AB529C8B09300B7F617 /* hguesting.xcdatamodel */;
+			path = hguesting.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6A490AA029C8B09300B7F617 /* Project object */;
+}
