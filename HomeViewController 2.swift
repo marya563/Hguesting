@@ -1,13 +1,13 @@
 //
-//  testViewController.swift
+//  HomeViewController.swift
 //  hguesting
 //
-//  Created by Mac Mini 9 on 5/4/2023.
+//  Created by Mac Mini 9 on 27/3/2023.
 //
 
 import UIKit
 
-class testViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
