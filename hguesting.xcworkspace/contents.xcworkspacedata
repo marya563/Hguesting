@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:EventsViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/macmini9/Documents/mariaetfedifront/hguesting/hguesting.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

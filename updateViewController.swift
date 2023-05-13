@@ -38,13 +38,13 @@ class updateViewController: UIViewController,UIImagePickerControllerDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        passwordTextfield.isSecureTextEntry = true
         
         userId = defaults.string(forKey: "id") ?? "N/A"
         updatebtn.addTarget(self, action: #selector(updateUser), for: .touchUpInside)
         profileImageView.layer.cornerRadius = profileImageView.frame.width / 2
         profileImageView.clipsToBounds = true
-
+        profileImageView.contentMode = .scaleAspectFill
         userId = defaults.string(forKey: "id") ?? "N/A"
         imagePicker.delegate = self
         imagePicker.allowsEditing = true
@@ -174,7 +174,7 @@ print("1")
         // Make an API request to update user data
         let url = URL(string: "http://localhost:3001/user/updateUser/\(userId)")!
         var request = URLRequest(url: url)
-        request.httpMethod = "PUT"
+        request.httpMethod = "PATCH"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = try? JSONSerialization.data(withJSONObject: updateParams, options: [])
         print("3")

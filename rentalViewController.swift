@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Razorpay
 
-class rentalViewController: UIViewController {
+class rentalViewController: UIViewController , RazorpayProtocol{
 
     
     @IBOutlet var firstdate: UIDatePicker!
@@ -27,6 +28,8 @@ class rentalViewController: UIViewController {
     @IBOutlet weak var cartypelabel: UILabel!
     @IBOutlet weak var carbrandlabel: UILabel!
 
+    var razorpay: RazorpayCheckout!
+    private let testKey = "rzp_test_FcETFNnEv4oWMb"
 
     let defaults = UserDefaults.standard
        var carId: String?
@@ -35,11 +38,19 @@ class rentalViewController: UIViewController {
 
        override func viewDidLoad() {
            super.viewDidLoad()
+           razorpay = RazorpayCheckout.initWithKey(testKey, andDelegate: self)
            storedCarId = UserDefaults.standard.string(forKey: "carId")
            firstdate.minimumDate = Date()
            lastdate.minimumDate = Date()
            loadCarData()
        }
+    
+    
+    
+    @IBAction func payement(_ sender: UIButton) {
+        createOrder()
+    }
+    
        
        @IBAction func dateChanged(_ sender: Any) {
            let calendar = Calendar.current
@@ -110,5 +121,81 @@ class rentalViewController: UIViewController {
         }
 
     }
+    // create order
+    private func createOrder() {
+        guard let carPrice = car?.carprice else {
+            print("Error: hotel price not set")
+            return
+        }
+        guard let carname = car?.cartype else {
+            print("Error: hotel name not set")
+            return
+        }
+        guard let carimage = car?.carPic else {
+            print("Error: hotel image not set")
+            return
+        }
+        
+        let carPriceInt = Int(carPrice)!
+        let amountInPaise = Int(carPriceInt * 100)
+        // converting hotel price to paise
+        let url = URL(string: "http://127.0.0.1:3001/create-order?amt=\(amountInPaise)")!
+
+        let task = URLSession.shared.dataTask(with: url) { data, _, _ in
+            guard let data = data else { return }
+            print(String(data: data, encoding: .utf8)!)
+
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                print("Order created successfully: \(String(describing: json))\n")
+                if let orderId = json?["id"] as? String, let amount = json?["amount_due"] as? Int {
+                    print("Order id is: \(orderId)")
+
+                    let options: [String: Any] = [
+                        "amount": amount, // This is in currency subunits. 100 = 100 paise= INR 1.
+                        "currency": "INR", // We support more that 92 international currencies.
+                        "description": "outsourcing IT Services",
+                        "order_id": orderId,
+                        "image": carimage,
+                        "name": carname,
+                        "prefill": [
+                            "contact": "917428730894",
+                            "email": "fedi.abdennabi@esprit.tn",
+                        ],
+                        "theme": [
+                            "color": "#F37254",
+                        ],
+                    ]
+
+                    DispatchQueue.main.async {
+                        self.razorpay.open(options)
+                    }
+                } else {
+                    print("oops..! cannot process your order")
+                }
+            } catch {
+                print("oops..! cannot process your order")
+            }
+        }
+
+        task.resume()
+    }
+
+   }
+
+   extension rentalViewController: RazorpayPaymentCompletionProtocol {
+       public func onPaymentError(_ code: Int32, description str: String) {
+           let alertController = UIAlertController(title: "FAILURE", message: str, preferredStyle: .alert)
+           let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+           alertController.addAction(cancelAction)
+           view.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+       }
+
+       public func onPaymentSuccess(_ payment_id: String) {
+           let alertController = UIAlertController(title: "SUCCESS", message: "Payment Id \(payment_id)", preferredStyle: .alert)
+           let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+           alertController.addAction(cancelAction)
+           view.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+       }
    
 }
